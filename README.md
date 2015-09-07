@@ -1,2 +1,4 @@
-# TDDKatas
-TDD Katas
+# TDD Katas
+
+Test common TDD problems.
+
