@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarsRover
+namespace MarsRover.Engine
 {
-    class Rover
+    public class Rover
     {
         public RoverPosition Position { get; set; }
-        public Area Plateau { get; set; }
+        public LandingArea Plateau { get; set; }
 
-        public Rover(Area plateau, RoverPosition initialPosition)
+        public Rover(LandingArea plateau, RoverPosition initialPosition)
         {
             Plateau = plateau;
             Position = initialPosition;
@@ -64,7 +64,7 @@ namespace MarsRover
             switch(Position.Heading)
             {
                 case RoverPosition.Direction.N:
-                    if (Position.Y < Plateau.Height)
+                    if (Position.Y < Plateau.Depth)
                         Position.Y += 1;
                     break;
                 case RoverPosition.Direction.E:
