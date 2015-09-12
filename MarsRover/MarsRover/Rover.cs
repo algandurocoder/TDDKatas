@@ -72,11 +72,11 @@ namespace MarsRover.Engine
                         Position.X += 1;
                     break;
                 case RoverPosition.Direction.S:
-                    if (Position.Y > 0)
+                    if (Position.Y > 1)
                         Position.Y -= 1;
                     break;
                 case RoverPosition.Direction.W:
-                    if (Position.X > 0)
+                    if (Position.X > 1)
                         Position.X -= 1;
                     break;
             }
