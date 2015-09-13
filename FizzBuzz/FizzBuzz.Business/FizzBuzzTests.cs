@@ -1,9 +1,5 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FizzBuzz.Business
 {
@@ -17,8 +13,8 @@ namespace FizzBuzz.Business
         [TestCase(15, "FizzBuzz")]
         public void TestTransform(Int32 input, string expected)
         {
-            string result = FizzBuzzTransformer.Transform(input);
-            Assert.AreEqual(expected, result);
+            string result = FizzBuzzEngine.Transform(input);
+            Assert.That(result, Is.EqualTo(expected));
         }
 
         

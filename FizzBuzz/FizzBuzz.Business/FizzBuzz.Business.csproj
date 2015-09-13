@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FizzBuzzTransformer.cs" />
+    <Compile Include="FizzBuzzEngine.cs" />
     <Compile Include="FizzBuzzTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
